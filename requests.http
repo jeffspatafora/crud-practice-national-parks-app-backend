@@ -1,2 +1,14 @@
 ### index
 GET http://localhost:3000/national_parks
+
+### create
+POST http://localhost:3000/national_parks
+Content-Type: application/json
+
+{
+  "name": "test",
+  "size_square_miles": "test",
+  "state": "test",
+  "date_founded": "test",
+  "map_image": "test"
+}
