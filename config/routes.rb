@@ -6,4 +6,5 @@ Rails.application.routes.draw do
 
   get "/national_parks" => "national_parks#index"
   post "/national_parks" => "national_parks#create"
+  delete "/national_parks/:id" => "national_parks#destroy"
 end

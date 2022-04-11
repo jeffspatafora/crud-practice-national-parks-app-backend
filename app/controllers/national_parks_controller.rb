@@ -17,4 +17,11 @@ class NationalParksController < ApplicationController
     national_park.save
     render json: national_park.as_json
   end
+
+  def destroy
+    national_park = NationalPark.find_by(id: params[:id])
+    national_park.delete
+    render json: { message: "park removed" }
+  end
+  
 end

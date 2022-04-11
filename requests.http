@@ -12,3 +12,6 @@ Content-Type: application/json
   "date_founded": "test",
   "map_image": "test"
 }
+
+### destroy
+DELETE http://localhost:3000/national_parks/3
